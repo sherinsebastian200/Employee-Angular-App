@@ -3,88 +3,25 @@
     <div class="row mt-4">
         <table class="table">
             <thead>
-              <tr>
-                <th scope="col">Employee Code</th>
+              <tr >
+                
                 <th scope="col">Employee Name</th>
                 <th scope="col">Designation</th>
                 <th scope="col">Salary</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Email</th>
                 <th scope="col">Company Website</th>
-                <th scope="col">Year of Experience</th>
+               
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>FGH439</td>
-                <td>John</td>
-                <td>Developer</td>
-                <td>4o000</td>
-                <td>9234567851</td>
-                <td>john@gmail.com</td>
-                <td>nestdigital.com</td>
-                <td>6</td>
+              <tr *ngFor="let i of data">
+                <td>{{i.name}}</td>
+                <td>{{i.designation}}</td>
+                <td>{{i.salary}}</td>
+                <td>{{i.Company}}</td>
+                
+               
               </tr>
-              <tr>
-                <td>FNJ6458</td>
-                <td>Albert</td>
-                <td>Developer</td>
-                <td>45000</td>
-                <td>8845673429</td>
-                <td>albert123@gmail.com</td>
-                <td>nestdigital.com</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>BNH3489</td>
-                <td>Emmanuel</td>
-                <td>FSD</td>
-                <td>45000</td>
-                <td>8834523908</td>
-                <td>emmanuel@gmail.com</td>
-                <td>nestdigital.com</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>BNH5687</td>
-                <td>clara</td>
-                <td>HR</td>
-                <td>45000</td>
-                <td>7907546789</td>
-                <td>clara@gmail.com</td>
-                <td>nestdigital.com</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>BNS5623</td>
-                <td>Anna</td>
-                <td>SD</td>
-                <td>56000</td>
-                <td>6743289053</td>
-                <td>anna@gmail.com</td>
-                <td>infosys.com</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>GBD5678</td>
-                <td>Alen</td>
-                <td>SD</td>
-                <td>50000</td>
-                <td>6748384478</td>
-                <td>alen@gmail.com</td>
-                <td>webcraft.com</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>DKL4562</td>
-                <td>Rose</td>
-                <td>Developer</td>
-                <td>75000</td>
-                <td>5634907865</td>
-                <td>rose@gmail.com</td>
-                <td>wipro.com</td>
-                <td>8</td>
-              </tr>
+             
             </tbody>
           </table>
     </div>
